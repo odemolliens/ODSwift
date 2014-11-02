@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C470801819FFA4F500B10705 /* ODOverlayAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C470801619FFA4F500B10705 /* ODOverlayAnnotationView.swift */; };
+		C470801919FFA4F500B10705 /* ODOverlayAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C470801719FFA4F500B10705 /* ODOverlayAnnotationView.xib */; };
+		C470801A19FFA51300B10705 /* ODOverlayAnnotationView.swift in Headers */ = {isa = PBXBuildFile; fileRef = C470801619FFA4F500B10705 /* ODOverlayAnnotationView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4775FF71A02223A00EEB3E6 /* ODMapViewProtocolCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4775FF61A02223A00EEB3E6 /* ODMapViewProtocolCallout.swift */; };
+		C4775FF91A02224500EEB3E6 /* ODMapViewProtocolCoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4775FF81A02224500EEB3E6 /* ODMapViewProtocolCoreLocation.swift */; };
+		C48402F919F7E2B20054111C /* ODMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48402E719F7E2B20054111C /* ODMapViewController.swift */; };
+		C48402FA19F7E2B20054111C /* ODMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48402E819F7E2B20054111C /* ODMapViewController.xib */; };
+		C48402FB19F7E2B20054111C /* ODMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48402E919F7E2B20054111C /* ODMapViewModel.swift */; };
+		C48402FC19F7E2B20054111C /* ODAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48402EB19F7E2B20054111C /* ODAnnotation.swift */; };
+		C48402FD19F7E2B20054111C /* ODMapObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48402EC19F7E2B20054111C /* ODMapObject.swift */; };
+		C48402FE19F7E2B20054111C /* ODMapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48402EE19F7E2B20054111C /* ODMapHelper.swift */; };
+		C48402FF19F7E2B20054111C /* ODMapSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C48402EF19F7E2B20054111C /* ODMapSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C484030519F7E2CC0054111C /* iMapSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48402F719F7E2B20054111C /* iMapSDKTests.swift */; };
+		C484030A19F7E7B60054111C /* ODMapViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = C48402E719F7E2B20054111C /* ODMapViewController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C484030B19F7E7B60054111C /* ODMapViewModel.swift in Headers */ = {isa = PBXBuildFile; fileRef = C48402E919F7E2B20054111C /* ODMapViewModel.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C484030C19F7E7B60054111C /* ODAnnotation.swift in Headers */ = {isa = PBXBuildFile; fileRef = C48402EB19F7E2B20054111C /* ODAnnotation.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C484030D19F7E7B60054111C /* ODMapObject.swift in Headers */ = {isa = PBXBuildFile; fileRef = C48402EC19F7E2B20054111C /* ODMapObject.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C484030E19F7E7B60054111C /* ODMapHelper.swift in Headers */ = {isa = PBXBuildFile; fileRef = C48402EE19F7E2B20054111C /* ODMapHelper.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C8A79B1A024B4700ABCBFB /* ODNavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8A79A1A024B4700ABCBFB /* ODNavigationHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C470801619FFA4F500B10705 /* ODOverlayAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODOverlayAnnotationView.swift; sourceTree = "<group>"; };
+		C470801719FFA4F500B10705 /* ODOverlayAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODOverlayAnnotationView.xib; sourceTree = "<group>"; };
+		C4775FF61A02223A00EEB3E6 /* ODMapViewProtocolCallout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODMapViewProtocolCallout.swift; sourceTree = "<group>"; };
+		C4775FF81A02224500EEB3E6 /* ODMapViewProtocolCoreLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODMapViewProtocolCoreLocation.swift; sourceTree = "<group>"; };
+		C48402E719F7E2B20054111C /* ODMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODMapViewController.swift; sourceTree = "<group>"; };
+		C48402E819F7E2B20054111C /* ODMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODMapViewController.xib; sourceTree = "<group>"; };
+		C48402E919F7E2B20054111C /* ODMapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODMapViewModel.swift; sourceTree = "<group>"; };
+		C48402EB19F7E2B20054111C /* ODAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODAnnotation.swift; sourceTree = "<group>"; };
+		C48402EC19F7E2B20054111C /* ODMapObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODMapObject.swift; sourceTree = "<group>"; };
+		C48402EE19F7E2B20054111C /* ODMapHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODMapHelper.swift; sourceTree = "<group>"; };
+		C48402EF19F7E2B20054111C /* ODMapSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODMapSDK.h; sourceTree = "<group>"; };
+		C48402F019F7E2B20054111C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48402F719F7E2B20054111C /* iMapSDKTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iMapSDKTests.swift; sourceTree = "<group>"; };
+		C48402F819F7E2B20054111C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C487FB5B19F79E540013443B /* ODMapSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ODMapSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C487FB6619F79E540013443B /* ODMapSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ODMapSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C487FB8B19F7A1E20013443B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C4C8A79A1A024B4700ABCBFB /* ODNavigationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODNavigationHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C487FB5719F79E540013443B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C487FB6319F79E540013443B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4775FF51A02223100EEB3E6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C4775FF61A02223A00EEB3E6 /* ODMapViewProtocolCallout.swift */,
+				C4775FF81A02224500EEB3E6 /* ODMapViewProtocolCoreLocation.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C48402B919F7D5920054111C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C487FB8B19F7A1E20013443B /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C48402E419F7E2B20054111C /* ODMapSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C4775FF51A02223100EEB3E6 /* Protocols */,
+				C48402E519F7E2B20054111C /* Components */,
+				C48402E619F7E2B20054111C /* Controllers */,
+				C48402EA19F7E2B20054111C /* Domain */,
+				C48402ED19F7E2B20054111C /* Helper */,
+				C48402EF19F7E2B20054111C /* ODMapSDK.h */,
+				C48402F019F7E2B20054111C /* Info.plist */,
+				C48402F119F7E2B20054111C /* Manager */,
+				C48402F219F7E2B20054111C /* Sample */,
+				C48402F519F7E2B20054111C /* Vendors */,
+			);
+			path = ODMapSDK;
+			sourceTree = "<group>";
+		};
+		C48402E519F7E2B20054111C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C48402E619F7E2B20054111C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C48402E719F7E2B20054111C /* ODMapViewController.swift */,
+				C48402E819F7E2B20054111C /* ODMapViewController.xib */,
+				C48402E919F7E2B20054111C /* ODMapViewModel.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C48402EA19F7E2B20054111C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C48402EB19F7E2B20054111C /* ODAnnotation.swift */,
+				C48402EC19F7E2B20054111C /* ODMapObject.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C48402ED19F7E2B20054111C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C48402EE19F7E2B20054111C /* ODMapHelper.swift */,
+				C4C8A79A1A024B4700ABCBFB /* ODNavigationHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C48402F119F7E2B20054111C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		C48402F219F7E2B20054111C /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				C470801619FFA4F500B10705 /* ODOverlayAnnotationView.swift */,
+				C470801719FFA4F500B10705 /* ODOverlayAnnotationView.xib */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		C48402F519F7E2B20054111C /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		C48402F619F7E2B20054111C /* ODMapSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				C48402F719F7E2B20054111C /* iMapSDKTests.swift */,
+				C48402F819F7E2B20054111C /* Info.plist */,
+			);
+			path = ODMapSDKTests;
+			sourceTree = "<group>";
+		};
+		C487FB5119F79E540013443B = {
+			isa = PBXGroup;
+			children = (
+				C48402E419F7E2B20054111C /* ODMapSDK */,
+				C48402F619F7E2B20054111C /* ODMapSDKTests */,
+				C48402B919F7D5920054111C /* Frameworks */,
+				C487FB5C19F79E540013443B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C487FB5C19F79E540013443B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C487FB5B19F79E540013443B /* ODMapSDK.framework */,
+				C487FB6619F79E540013443B /* ODMapSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C487FB5819F79E540013443B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48402FF19F7E2B20054111C /* ODMapSDK.h in Headers */,
+				C484030A19F7E7B60054111C /* ODMapViewController.swift in Headers */,
+				C484030B19F7E7B60054111C /* ODMapViewModel.swift in Headers */,
+				C484030C19F7E7B60054111C /* ODAnnotation.swift in Headers */,
+				C484030D19F7E7B60054111C /* ODMapObject.swift in Headers */,
+				C470801A19FFA51300B10705 /* ODOverlayAnnotationView.swift in Headers */,
+				C484030E19F7E7B60054111C /* ODMapHelper.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C487FB5A19F79E540013443B /* ODMapSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C487FB6E19F79E540013443B /* Build configuration list for PBXNativeTarget "ODMapSDK" */;
+			buildPhases = (
+				C487FB5619F79E540013443B /* Sources */,
+				C487FB5719F79E540013443B /* Frameworks */,
+				C487FB5819F79E540013443B /* Headers */,
+				C487FB5919F79E540013443B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ODMapSDK;
+			productName = iMapSDK;
+			productReference = C487FB5B19F79E540013443B /* ODMapSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C487FB6519F79E540013443B /* ODMapSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C487FB7119F79E540013443B /* Build configuration list for PBXNativeTarget "ODMapSDKTests" */;
+			buildPhases = (
+				C487FB6219F79E540013443B /* Sources */,
+				C487FB6319F79E540013443B /* Frameworks */,
+				C487FB6419F79E540013443B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ODMapSDKTests;
+			productName = iMapSDKTests;
+			productReference = C487FB6619F79E540013443B /* ODMapSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C487FB5219F79E540013443B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = dreamteam;
+				TargetAttributes = {
+					C487FB5A19F79E540013443B = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					C487FB6519F79E540013443B = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = C487FB5519F79E540013443B /* Build configuration list for PBXProject "ODMapSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C487FB5119F79E540013443B;
+			productRefGroup = C487FB5C19F79E540013443B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C487FB5A19F79E540013443B /* ODMapSDK */,
+				C487FB6519F79E540013443B /* ODMapSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C487FB5919F79E540013443B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48402FA19F7E2B20054111C /* ODMapViewController.xib in Resources */,
+				C470801919FFA4F500B10705 /* ODOverlayAnnotationView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C487FB6419F79E540013443B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C487FB5619F79E540013443B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C8A79B1A024B4700ABCBFB /* ODNavigationHelper.swift in Sources */,
+				C48402FD19F7E2B20054111C /* ODMapObject.swift in Sources */,
+				C48402FB19F7E2B20054111C /* ODMapViewModel.swift in Sources */,
+				C48402F919F7E2B20054111C /* ODMapViewController.swift in Sources */,
+				C4775FF71A02223A00EEB3E6 /* ODMapViewProtocolCallout.swift in Sources */,
+				C470801819FFA4F500B10705 /* ODOverlayAnnotationView.swift in Sources */,
+				C48402FE19F7E2B20054111C /* ODMapHelper.swift in Sources */,
+				C4775FF91A02224500EEB3E6 /* ODMapViewProtocolCoreLocation.swift in Sources */,
+				C48402FC19F7E2B20054111C /* ODAnnotation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C487FB6219F79E540013443B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C484030519F7E2CC0054111C /* iMapSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C487FB6C19F79E540013443B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C487FB6D19F79E540013443B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C487FB6F19F79E540013443B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ODMapSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = ODMapSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C487FB7019F79E540013443B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ODMapSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = ODMapSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C487FB7219F79E540013443B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ODMapSDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = ODMapSDKTests;
+			};
+			name = Debug;
+		};
+		C487FB7319F79E540013443B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ODMapSDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = ODMapSDKTests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C487FB5519F79E540013443B /* Build configuration list for PBXProject "ODMapSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C487FB6C19F79E540013443B /* Debug */,
+				C487FB6D19F79E540013443B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C487FB6E19F79E540013443B /* Build configuration list for PBXNativeTarget "ODMapSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C487FB6F19F79E540013443B /* Debug */,
+				C487FB7019F79E540013443B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C487FB7119F79E540013443B /* Build configuration list for PBXNativeTarget "ODMapSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C487FB7219F79E540013443B /* Debug */,
+				C487FB7319F79E540013443B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C487FB5219F79E540013443B /* Project object */;
+}
