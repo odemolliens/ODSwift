@@ -43,6 +43,14 @@ Util:
 **ODDeviceUtil** -> Get some information about the user device
 
 
+Donation
+==========
+
+You like these frameworks ?
+
+Give something :)
+
+BTC: **1BSvZLVACZHM88U8uuPaAX94KGLpnTYtgw**
 
 Copyright
 ==========
