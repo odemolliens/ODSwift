@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ODNetworkSample/ODNetworkSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ODNetwork/ODNetwork.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ODSwiftUtil/ODSwiftUtil.xcodeproj">
    </FileRef>
    <FileRef

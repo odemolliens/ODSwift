@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C46CA6191A090AB0001A9938 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46CA6161A090A9E001A9938 /* Alamofire.framework */; };
+		C46CA62F1A091F7D001A9938 /* ODURLCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46CA62E1A091F7D001A9938 /* ODURLCache.swift */; };
+		C46CA6301A091F8C001A9938 /* ODURLCache.swift in Headers */ = {isa = PBXBuildFile; fileRef = C46CA62E1A091F7D001A9938 /* ODURLCache.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4B3DDD91A0A5B7B0016D483 /* ODCachedURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B3DDD81A0A5B7B0016D483 /* ODCachedURLResponse.swift */; };
+		C4B3DDDC1A0A5B890016D483 /* ODCachedURLResponse.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4B3DDD81A0A5B7B0016D483 /* ODCachedURLResponse.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C926D41A079C6E00C8F5F7 /* ODNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = C4C926D31A079C6E00C8F5F7 /* ODNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C926DA1A079C6E00C8F5F7 /* ODNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C926CE1A079C6E00C8F5F7 /* ODNetwork.framework */; };
+		C4C926E11A079C6E00C8F5F7 /* ODNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C926E01A079C6E00C8F5F7 /* ODNetworkTests.swift */; };
+		C4C926EF1A079CCC00C8F5F7 /* NSUrlConnection+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C926EE1A079CCC00C8F5F7 /* NSUrlConnection+Blocks.swift */; };
+		C4C926F41A079D7B00C8F5F7 /* ODNetworkManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C926F31A079D7B00C8F5F7 /* ODNetworkManagement.swift */; };
+		C4C926F61A079DD000C8F5F7 /* ODURLProtocol.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = C4C926F51A079DD000C8F5F7 /* ODURLProtocol.xcdatamodel */; };
+		C4C926FA1A079E8800C8F5F7 /* ODAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C926F91A079E8800C8F5F7 /* ODAppDelegate.swift */; };
+		C4C927371A08C4B900C8F5F7 /* ODRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C927361A08C4B900C8F5F7 /* ODRequest.swift */; };
+		C4C9273D1A08D1AC00C8F5F7 /* ODAppDelegate.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4C926F91A079E8800C8F5F7 /* ODAppDelegate.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C9273F1A08D1AC00C8F5F7 /* ODRequest.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4C927361A08C4B900C8F5F7 /* ODRequest.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C927401A08D1AC00C8F5F7 /* ODNetworkManagement.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4C926F31A079D7B00C8F5F7 /* ODNetworkManagement.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C927411A08D1AC00C8F5F7 /* NSUrlConnection+Blocks.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4C926EE1A079CCC00C8F5F7 /* NSUrlConnection+Blocks.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4F0F76E1A0B785A00DA5F08 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F0F76D1A0B785A00DA5F08 /* Reachability.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C46CA6151A090A9E001A9938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C46CA6101A090A9D001A9938 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		C46CA6171A090A9E001A9938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C46CA6101A090A9D001A9938 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		C4C926DB1A079C6E00C8F5F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4C926C51A079C6E00C8F5F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4C926CD1A079C6E00C8F5F7;
+			remoteInfo = ODNetwork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C46CA6101A090A9D001A9938 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Alamofire.xcodeproj; sourceTree = "<group>"; };
+		C46CA62E1A091F7D001A9938 /* ODURLCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODURLCache.swift; sourceTree = "<group>"; };
+		C4B3DDD81A0A5B7B0016D483 /* ODCachedURLResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODCachedURLResponse.swift; sourceTree = "<group>"; };
+		C4C926CE1A079C6E00C8F5F7 /* ODNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ODNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C926D21A079C6E00C8F5F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C926D31A079C6E00C8F5F7 /* ODNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODNetwork.h; sourceTree = "<group>"; };
+		C4C926D91A079C6E00C8F5F7 /* ODNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ODNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C926DF1A079C6E00C8F5F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C926E01A079C6E00C8F5F7 /* ODNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODNetworkTests.swift; sourceTree = "<group>"; };
+		C4C926EE1A079CCC00C8F5F7 /* NSUrlConnection+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUrlConnection+Blocks.swift"; sourceTree = "<group>"; };
+		C4C926F31A079D7B00C8F5F7 /* ODNetworkManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODNetworkManagement.swift; sourceTree = "<group>"; };
+		C4C926F51A079DD000C8F5F7 /* ODURLProtocol.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ODURLProtocol.xcdatamodel; sourceTree = "<group>"; };
+		C4C926F91A079E8800C8F5F7 /* ODAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODAppDelegate.swift; sourceTree = "<group>"; };
+		C4C927361A08C4B900C8F5F7 /* ODRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODRequest.swift; sourceTree = "<group>"; };
+		C4F0F76D1A0B785A00DA5F08 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4C926CA1A079C6E00C8F5F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46CA6191A090AB0001A9938 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C926D61A079C6E00C8F5F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C926DA1A079C6E00C8F5F7 /* ODNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C46CA6071A090862001A9938 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				C4F0F76C1A0B784A00DA5F08 /* Swift-Reachability */,
+				C46CA6081A090862001A9938 /* Alamofire */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		C46CA6081A090862001A9938 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				C46CA6101A090A9D001A9938 /* Alamofire.xcodeproj */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		C46CA6111A090A9D001A9938 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C46CA6161A090A9E001A9938 /* Alamofire.framework */,
+				C46CA6181A090A9E001A9938 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4C926C41A079C6E00C8F5F7 = {
+			isa = PBXGroup;
+			children = (
+				C4C926D01A079C6E00C8F5F7 /* ODNetwork */,
+				C4C926DD1A079C6E00C8F5F7 /* ODNetworkTests */,
+				C4C926CF1A079C6E00C8F5F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4C926CF1A079C6E00C8F5F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4C926CE1A079C6E00C8F5F7 /* ODNetwork.framework */,
+				C4C926D91A079C6E00C8F5F7 /* ODNetworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4C926D01A079C6E00C8F5F7 /* ODNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				C46CA6071A090862001A9938 /* Vendors */,
+				C4C926EA1A079CB200C8F5F7 /* Components */,
+				C4C926EB1A079CB200C8F5F7 /* Data */,
+				C4C926EC1A079CB200C8F5F7 /* Services */,
+				C4C926ED1A079CB200C8F5F7 /* Util */,
+				C4C926D31A079C6E00C8F5F7 /* ODNetwork.h */,
+				C4C926D11A079C6E00C8F5F7 /* Supporting Files */,
+			);
+			path = ODNetwork;
+			sourceTree = "<group>";
+		};
+		C4C926D11A079C6E00C8F5F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4C926D21A079C6E00C8F5F7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4C926DD1A079C6E00C8F5F7 /* ODNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4C926E01A079C6E00C8F5F7 /* ODNetworkTests.swift */,
+				C4C926DE1A079C6E00C8F5F7 /* Supporting Files */,
+			);
+			path = ODNetworkTests;
+			sourceTree = "<group>";
+		};
+		C4C926DE1A079C6E00C8F5F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4C926DF1A079C6E00C8F5F7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4C926EA1A079CB200C8F5F7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C46CA62E1A091F7D001A9938 /* ODURLCache.swift */,
+				C4C926F91A079E8800C8F5F7 /* ODAppDelegate.swift */,
+				C4C927361A08C4B900C8F5F7 /* ODRequest.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C4C926EB1A079CB200C8F5F7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C4C926F51A079DD000C8F5F7 /* ODURLProtocol.xcdatamodel */,
+				C4B3DDD81A0A5B7B0016D483 /* ODCachedURLResponse.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C4C926EC1A079CB200C8F5F7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4C926F31A079D7B00C8F5F7 /* ODNetworkManagement.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4C926ED1A079CB200C8F5F7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C4C926EE1A079CCC00C8F5F7 /* NSUrlConnection+Blocks.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C4F0F76C1A0B784A00DA5F08 /* Swift-Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				C4F0F76D1A0B785A00DA5F08 /* Reachability.swift */,
+			);
+			path = "Swift-Reachability";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C4C926CB1A079C6E00C8F5F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C926D41A079C6E00C8F5F7 /* ODNetwork.h in Headers */,
+				C4C9273D1A08D1AC00C8F5F7 /* ODAppDelegate.swift in Headers */,
+				C4C9273F1A08D1AC00C8F5F7 /* ODRequest.swift in Headers */,
+				C4C927401A08D1AC00C8F5F7 /* ODNetworkManagement.swift in Headers */,
+				C46CA6301A091F8C001A9938 /* ODURLCache.swift in Headers */,
+				C4C927411A08D1AC00C8F5F7 /* NSUrlConnection+Blocks.swift in Headers */,
+				C4B3DDDC1A0A5B890016D483 /* ODCachedURLResponse.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C4C926CD1A079C6E00C8F5F7 /* ODNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C926E41A079C6E00C8F5F7 /* Build configuration list for PBXNativeTarget "ODNetwork" */;
+			buildPhases = (
+				C4C926C91A079C6E00C8F5F7 /* Sources */,
+				C4C926CA1A079C6E00C8F5F7 /* Frameworks */,
+				C4C926CB1A079C6E00C8F5F7 /* Headers */,
+				C4C926CC1A079C6E00C8F5F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ODNetwork;
+			productName = ODNetwork;
+			productReference = C4C926CE1A079C6E00C8F5F7 /* ODNetwork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4C926D81A079C6E00C8F5F7 /* ODNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4C926E71A079C6E00C8F5F7 /* Build configuration list for PBXNativeTarget "ODNetworkTests" */;
+			buildPhases = (
+				C4C926D51A079C6E00C8F5F7 /* Sources */,
+				C4C926D61A079C6E00C8F5F7 /* Frameworks */,
+				C4C926D71A079C6E00C8F5F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4C926DC1A079C6E00C8F5F7 /* PBXTargetDependency */,
+			);
+			name = ODNetworkTests;
+			productName = ODNetworkTests;
+			productReference = C4C926D91A079C6E00C8F5F7 /* ODNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4C926C51A079C6E00C8F5F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = dreamteam;
+				TargetAttributes = {
+					C4C926CD1A079C6E00C8F5F7 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					C4C926D81A079C6E00C8F5F7 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = C4C926C81A079C6E00C8F5F7 /* Build configuration list for PBXProject "ODNetwork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C4C926C41A079C6E00C8F5F7;
+			productRefGroup = C4C926CF1A079C6E00C8F5F7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C46CA6111A090A9D001A9938 /* Products */;
+					ProjectRef = C46CA6101A090A9D001A9938 /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C4C926CD1A079C6E00C8F5F7 /* ODNetwork */,
+				C4C926D81A079C6E00C8F5F7 /* ODNetworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C46CA6161A090A9E001A9938 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = C46CA6151A090A9E001A9938 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C46CA6181A090A9E001A9938 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = C46CA6171A090A9E001A9938 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4C926CC1A079C6E00C8F5F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C926D71A079C6E00C8F5F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4C926C91A079C6E00C8F5F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C927371A08C4B900C8F5F7 /* ODRequest.swift in Sources */,
+				C4B3DDD91A0A5B7B0016D483 /* ODCachedURLResponse.swift in Sources */,
+				C4C926F41A079D7B00C8F5F7 /* ODNetworkManagement.swift in Sources */,
+				C4C926F61A079DD000C8F5F7 /* ODURLProtocol.xcdatamodel in Sources */,
+				C4C926EF1A079CCC00C8F5F7 /* NSUrlConnection+Blocks.swift in Sources */,
+				C4C926FA1A079E8800C8F5F7 /* ODAppDelegate.swift in Sources */,
+				C4F0F76E1A0B785A00DA5F08 /* Reachability.swift in Sources */,
+				C46CA62F1A091F7D001A9938 /* ODURLCache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C926D51A079C6E00C8F5F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C926E11A079C6E00C8F5F7 /* ODNetworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4C926DC1A079C6E00C8F5F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4C926CD1A079C6E00C8F5F7 /* ODNetwork */;
+			targetProxy = C4C926DB1A079C6E00C8F5F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C4C926E21A079C6E00C8F5F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C4C926E31A079C6E00C8F5F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C4C926E51A079C6E00C8F5F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODNetwork/Vendors/Alamofire",
+				);
+				INFOPLIST_FILE = ODNetwork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4C926E61A079C6E00C8F5F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODNetwork/Vendors/Alamofire",
+				);
+				INFOPLIST_FILE = ODNetwork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C4C926E81A079C6E00C8F5F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ODNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4C926E91A079C6E00C8F5F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ODNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4C926C81A079C6E00C8F5F7 /* Build configuration list for PBXProject "ODNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C926E21A079C6E00C8F5F7 /* Debug */,
+				C4C926E31A079C6E00C8F5F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C926E41A079C6E00C8F5F7 /* Build configuration list for PBXNativeTarget "ODNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C926E51A079C6E00C8F5F7 /* Debug */,
+				C4C926E61A079C6E00C8F5F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4C926E71A079C6E00C8F5F7 /* Build configuration list for PBXNativeTarget "ODNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4C926E81A079C6E00C8F5F7 /* Debug */,
+				C4C926E91A079C6E00C8F5F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4C926C51A079C6E00C8F5F7 /* Project object */;
+}

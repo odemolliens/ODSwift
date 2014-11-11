@@ -10,8 +10,20 @@
 		C4C8A7B21A03A05800ABCBFB /* ODSwiftUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = C4C8A7B11A03A05800ABCBFB /* ODSwiftUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4C8A7B81A03A05800ABCBFB /* ODSwiftUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C8A7AC1A03A05800ABCBFB /* ODSwiftUtil.framework */; };
 		C4C8A7BF1A03A05800ABCBFB /* ODSwiftUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8A7BE1A03A05800ABCBFB /* ODSwiftUtilTests.swift */; };
-		C4C8A7D31A03A0CF00ABCBFB /* ODImageCached.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8A7D21A03A0CF00ABCBFB /* ODImageCached.swift */; };
-		C4C8A7D51A03A14C00ABCBFB /* ODDeviceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8A7D41A03A14C00ABCBFB /* ODDeviceUtil.swift */; };
+		C4C9268A1A078E2600C8F5F7 /* NSObject+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9267E1A078E2600C8F5F7 /* NSObject+JSON.swift */; };
+		C4C9268B1A078E2600C8F5F7 /* UIColor+ColorWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9267F1A078E2600C8F5F7 /* UIColor+ColorWith.swift */; };
+		C4C9268C1A078E2600C8F5F7 /* ODSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C926811A078E2600C8F5F7 /* ODSpinnerView.swift */; };
+		C4C9268D1A078E2600C8F5F7 /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C926831A078E2600C8F5F7 /* LocalizationHelper.swift */; };
+		C4C9268E1A078E2600C8F5F7 /* UIImage+ODImageCached.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C926851A078E2600C8F5F7 /* UIImage+ODImageCached.swift */; };
+		C4C9268F1A078E2600C8F5F7 /* ODDeviceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C926891A078E2600C8F5F7 /* ODDeviceUtil.swift */; };
+		C4C926911A07933B00C8F5F7 /* ODAppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C926901A07933B00C8F5F7 /* ODAppUtil.swift */; };
+		C4C926961A07979300C8F5F7 /* NSObject+JSON.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4C9267E1A078E2600C8F5F7 /* NSObject+JSON.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C926971A07979300C8F5F7 /* UIColor+ColorWith.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4C9267F1A078E2600C8F5F7 /* UIColor+ColorWith.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C926981A07979300C8F5F7 /* ODSpinnerView.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4C926811A078E2600C8F5F7 /* ODSpinnerView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C926991A07979300C8F5F7 /* LocalizationHelper.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4C926831A078E2600C8F5F7 /* LocalizationHelper.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C9269A1A07979300C8F5F7 /* UIImage+ODImageCached.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4C926851A078E2600C8F5F7 /* UIImage+ODImageCached.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C9269C1A07979300C8F5F7 /* ODDeviceUtil.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4C926891A078E2600C8F5F7 /* ODDeviceUtil.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C9269D1A07979300C8F5F7 /* ODAppUtil.swift in Headers */ = {isa = PBXBuildFile; fileRef = C4C926901A07933B00C8F5F7 /* ODAppUtil.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +43,13 @@
 		C4C8A7B71A03A05800ABCBFB /* ODSwiftUtilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ODSwiftUtilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C8A7BD1A03A05800ABCBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4C8A7BE1A03A05800ABCBFB /* ODSwiftUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODSwiftUtilTests.swift; sourceTree = "<group>"; };
-		C4C8A7D21A03A0CF00ABCBFB /* ODImageCached.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ODImageCached.swift; path = ../../../../../../../Documents/ODImageCached.swift; sourceTree = "<group>"; };
-		C4C8A7D41A03A14C00ABCBFB /* ODDeviceUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODDeviceUtil.swift; sourceTree = "<group>"; };
+		C4C9267E1A078E2600C8F5F7 /* NSObject+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+JSON.swift"; sourceTree = "<group>"; };
+		C4C9267F1A078E2600C8F5F7 /* UIColor+ColorWith.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ColorWith.swift"; sourceTree = "<group>"; };
+		C4C926811A078E2600C8F5F7 /* ODSpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODSpinnerView.swift; sourceTree = "<group>"; };
+		C4C926831A078E2600C8F5F7 /* LocalizationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
+		C4C926851A078E2600C8F5F7 /* UIImage+ODImageCached.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ODImageCached.swift"; sourceTree = "<group>"; };
+		C4C926891A078E2600C8F5F7 /* ODDeviceUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODDeviceUtil.swift; sourceTree = "<group>"; };
+		C4C926901A07933B00C8F5F7 /* ODAppUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODAppUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +92,13 @@
 		C4C8A7AE1A03A05800ABCBFB /* ODSwiftUtil */ = {
 			isa = PBXGroup;
 			children = (
-				C4C8A7D11A03A0A500ABCBFB /* Image */,
+				C4C9267D1A078E2600C8F5F7 /* Categories */,
+				C4C926801A078E2600C8F5F7 /* Components */,
+				C4C926821A078E2600C8F5F7 /* Helper */,
+				C4C926841A078E2600C8F5F7 /* Image */,
+				C4C926861A078E2600C8F5F7 /* Manager */,
+				C4C926871A078E2600C8F5F7 /* Services */,
+				C4C926881A078E2600C8F5F7 /* Util */,
 				C4C8A7B11A03A05800ABCBFB /* ODSwiftUtil.h */,
 				C4C8A7AF1A03A05800ABCBFB /* Supporting Files */,
 			);
@@ -107,13 +130,60 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C4C8A7D11A03A0A500ABCBFB /* Image */ = {
+		C4C9267D1A078E2600C8F5F7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				C4C8A7D21A03A0CF00ABCBFB /* ODImageCached.swift */,
-				C4C8A7D41A03A14C00ABCBFB /* ODDeviceUtil.swift */,
+				C4C9267E1A078E2600C8F5F7 /* NSObject+JSON.swift */,
+				C4C9267F1A078E2600C8F5F7 /* UIColor+ColorWith.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C4C926801A078E2600C8F5F7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C4C926811A078E2600C8F5F7 /* ODSpinnerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C4C926821A078E2600C8F5F7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C4C926831A078E2600C8F5F7 /* LocalizationHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C4C926841A078E2600C8F5F7 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				C4C926851A078E2600C8F5F7 /* UIImage+ODImageCached.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		C4C926861A078E2600C8F5F7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		C4C926871A078E2600C8F5F7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4C926881A078E2600C8F5F7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C4C926891A078E2600C8F5F7 /* ODDeviceUtil.swift */,
+				C4C926901A07933B00C8F5F7 /* ODAppUtil.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4C8A7B21A03A05800ABCBFB /* ODSwiftUtil.h in Headers */,
+				C4C926961A07979300C8F5F7 /* NSObject+JSON.swift in Headers */,
+				C4C926971A07979300C8F5F7 /* UIColor+ColorWith.swift in Headers */,
+				C4C926981A07979300C8F5F7 /* ODSpinnerView.swift in Headers */,
+				C4C926991A07979300C8F5F7 /* LocalizationHelper.swift in Headers */,
+				C4C9269A1A07979300C8F5F7 /* UIImage+ODImageCached.swift in Headers */,
+				C4C9269C1A07979300C8F5F7 /* ODDeviceUtil.swift in Headers */,
+				C4C9269D1A07979300C8F5F7 /* ODAppUtil.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4C8A7D51A03A14C00ABCBFB /* ODDeviceUtil.swift in Sources */,
-				C4C8A7D31A03A0CF00ABCBFB /* ODImageCached.swift in Sources */,
+				C4C9268F1A078E2600C8F5F7 /* ODDeviceUtil.swift in Sources */,
+				C4C9268D1A078E2600C8F5F7 /* LocalizationHelper.swift in Sources */,
+				C4C926911A07933B00C8F5F7 /* ODAppUtil.swift in Sources */,
+				C4C9268C1A078E2600C8F5F7 /* ODSpinnerView.swift in Sources */,
+				C4C9268E1A078E2600C8F5F7 /* UIImage+ODImageCached.swift in Sources */,
+				C4C9268A1A078E2600C8F5F7 /* NSObject+JSON.swift in Sources */,
+				C4C9268B1A078E2600C8F5F7 /* UIColor+ColorWith.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

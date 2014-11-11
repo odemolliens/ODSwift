@@ -1,14 +1,27 @@
 //
-//  ODMapViewController.swift
-//  iMap
+//Copyright 2014 Olivier Demolliens - @odemolliens
 //
-//  Created by OlivierDemolliens on 21/10/14.
-//  Copyright (c) 2014 dreamteam. All rights reserved.
+//Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
+//
+//file except in compliance with the License. You may obtain a copy of the License at
+//
+//http://www.apache.org/licenses/LICENSE-2.0
+//
+//Unless required by applicable law or agreed to in writing, software distributed under
+//
+//the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
+//
+//ANY KIND, either express or implied. See the License for the specific language governing
+//
+//permissions and limitations under the License.
+//
 //
 
 import UIKit;
 import MapKit;
 import CoreLocation;
+
+private let kMapViewControllerReuseMe : NSString = "kMapViewControllerReuseMe";
 
 /* ODMapViewController
 * Easy way to manage the Map View
@@ -85,6 +98,53 @@ public class ODMapViewController: UIViewController, CLLocationManagerDelegate, M
         self.mapView.showsPointsOfInterest = self.model.showsPointsOfInterest;
     }
     
+    // MARK: Util public method
+    
+    
+    /* Show Region
+    * Show on the map the region setted in parameters
+    */
+    public func showRegion(coordinate aCoordinate : CLLocationCoordinate2D, delta : MKCoordinateSpan, animated : Bool){
+        
+        self.mapView.setRegion(MKCoordinateRegionMake(aCoordinate, delta), animated: animated);
+    }
+    
+    /* Show Point Of Interest
+    * Show on the map the annotation setted in parameters
+    */
+    public func showPointOfInterest(annotation anAnnotation : ODAnnotation, delta : MKCoordinateSpan, animated : Bool){
+        self.mapView.setRegion(MKCoordinateRegionMake(anAnnotation.coordinate, delta), animated: animated);
+    }
+    
+    /* Add Map Object On Map
+    * Create an annotation with custom content and display it
+    */
+    public func addMapObjectOnMap(mapObject aMapObject : ODMapObject){
+        var customAnnotation : ODAnnotation = ODAnnotation(content:aMapObject);
+        self.mapView.addAnnotation(customAnnotation);
+    }
+    
+    /* Add Map Objects On Map
+    * Create an annotation list with custom content and display it
+    */
+    public func addMapObjectsOnMap(mapObjects aListMapObject : NSMutableArray){
+        
+        if(aListMapObject.count>0){
+            var privateArray : NSMutableArray = NSMutableArray();
+            
+            for(var i = 0; i < aListMapObject.count;i++){
+                
+                var aMapObject : ODMapObject = aListMapObject.objectAtIndex(i) as ODMapObject;
+                var customAnnotation : ODAnnotation = ODAnnotation(content:aMapObject);
+                privateArray.addObject(customAnnotation);
+                
+            }
+            
+            self.mapView.addAnnotations(privateArray);
+        }
+        
+    }
+    
     // MARK: CLLocation Manager Delegate
     
     public func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus)
@@ -97,6 +157,9 @@ public class ODMapViewController: UIViewController, CLLocationManagerDelegate, M
     
     // MARK: Map View Delegate
     
+    /*
+    *
+    */
     public func mapView(mapView: MKMapView!, didDeselectAnnotationView view: MKAnnotationView!)
     {
         
@@ -107,19 +170,27 @@ public class ODMapViewController: UIViewController, CLLocationManagerDelegate, M
         
     }
     
+    /*
+    *
+    */
     public func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView!
     {
-        var pinView : MKPinAnnotationView = MKPinAnnotationView(annotation: annotation,reuseIdentifier: "");
+        var pinView : MKPinAnnotationView = MKPinAnnotationView(annotation: annotation,reuseIdentifier: kMapViewControllerReuseMe);
         var customAnnotation = annotation as ODAnnotation;
         
         var iconPin : NSString = customAnnotation.content.iconPin!;
         
         pinView.image = UIImage(named: iconPin);
-        pinView.canShowCallout = false;
+        
+        
+        pinView.canShowCallout = self.nativeCalloutView();
         
         return pinView;
     }
     
+    /*
+    *
+    */
     public func mapView(mapView: MKMapView!, didSelectAnnotationView view: MKAnnotationView!){
         if(!view.annotation.isKindOfClass(MKUserLocation)){
             
@@ -133,14 +204,21 @@ public class ODMapViewController: UIViewController, CLLocationManagerDelegate, M
             
             var customAnnotation = (mapView.selectedAnnotations as NSArray).objectAtIndex(0) as ODAnnotation;
             
-            view.canShowCallout = false;
+            view.canShowCallout = self.nativeCalloutView();
             view.draggable = false;
             
-            view.addSubview(self.fillCustomAnnotationView(calloutView,annotation: customAnnotation));
+            if(!self.nativeCalloutView()){
+                view.addSubview(self.fillCustomAnnotationView(calloutView,annotation: customAnnotation));
+            }
         }
     }
     
     // MARK : ODMapView Protocol Callout
+    
+    public func nativeCalloutView() -> Bool
+    {
+        return false;
+    }
     
     public func customAnnotationView() -> ODOverlayAnnotationView
     {

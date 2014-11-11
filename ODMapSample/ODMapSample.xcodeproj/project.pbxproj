@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40245CB1A10F7BC006B5D8C /* violet.png in Resources */ = {isa = PBXBuildFile; fileRef = C40245C91A10F7BC006B5D8C /* violet.png */; };
+		C40245CC1A10F7BC006B5D8C /* violet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C40245CA1A10F7BC006B5D8C /* violet@2x.png */; };
 		C470801419FFA35500B10705 /* ODMapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C470801319FFA35500B10705 /* ODMapSDK.framework */; };
 		C470801519FFA36100B10705 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F3DB2919FF84AB00AB903D /* CoreLocation.framework */; };
 		C470801B19FFA54F00B10705 /* ODMapSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C470801319FFA35500B10705 /* ODMapSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C470802319FFAE3000B10705 /* ODOverlayAnnotationView.nib in Resources */ = {isa = PBXBuildFile; fileRef = C470802219FFAE3000B10705 /* ODOverlayAnnotationView.nib */; };
-		C4775FFC1A02295400EEB3E6 /* violet.png in Resources */ = {isa = PBXBuildFile; fileRef = C4775FFA1A02295400EEB3E6 /* violet.png */; };
-		C4775FFD1A02295400EEB3E6 /* violet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4775FFB1A02295400EEB3E6 /* violet@2x.png */; };
 		C48402DC19F7E26E0054111C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48402D119F7E26E0054111C /* AppDelegate.swift */; };
 		C48402DD19F7E26E0054111C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48402D219F7E26E0054111C /* LaunchScreen.xib */; };
 		C48402DF19F7E26E0054111C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48402D619F7E26E0054111C /* Images.xcassets */; };
@@ -48,10 +48,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C40245C91A10F7BC006B5D8C /* violet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = violet.png; sourceTree = "<group>"; };
+		C40245CA1A10F7BC006B5D8C /* violet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "violet@2x.png"; sourceTree = "<group>"; };
 		C470801319FFA35500B10705 /* ODMapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ODMapSDK.framework; path = "../DerivedData/ODSwift/Build/Products/Debug-iphoneos/ODMapSDK.framework"; sourceTree = "<group>"; };
 		C470802219FFAE3000B10705 /* ODOverlayAnnotationView.nib */ = {isa = PBXFileReference; lastKnownFileType = file; name = ODOverlayAnnotationView.nib; path = "../DerivedData/ODSwift/Build/Products/Debug-iphoneos/ODMapSDK.framework/ODOverlayAnnotationView.nib"; sourceTree = "<group>"; };
-		C4775FFA1A02295400EEB3E6 /* violet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = violet.png; path = ../../../../../ivelo/iVelo/iVelo/Ressources/Default/violet.png; sourceTree = "<group>"; };
-		C4775FFB1A02295400EEB3E6 /* violet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "violet@2x.png"; path = "../../../../../Desktop/Bordel/Rpos/iVelo/iVelo/Ressources/Default/violet@2x.png"; sourceTree = "<group>"; };
 		C48402CC19F7E25C0054111C /* iMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iMapTests.swift; sourceTree = "<group>"; };
 		C48402CD19F7E25C0054111C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C48402D119F7E26E0054111C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +113,8 @@
 		C48402D819F7E26E0054111C /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				C40245C91A10F7BC006B5D8C /* violet.png */,
+				C40245CA1A10F7BC006B5D8C /* violet@2x.png */,
 				C48402D919F7E26E0054111C /* MapTestViewController.swift */,
 				C48402DA19F7E26E0054111C /* MapTestViewController.xib */,
 			);
@@ -122,8 +124,6 @@
 		C487FADC19F67F3D0013443B = {
 			isa = PBXGroup;
 			children = (
-				C4775FFA1A02295400EEB3E6 /* violet.png */,
-				C4775FFB1A02295400EEB3E6 /* violet@2x.png */,
 				C48402D019F7E26E0054111C /* ODMapSample */,
 				C48402CB19F7E25C0054111C /* ODMapSampleTests */,
 				C487FB2D19F796F80013443B /* Frameworks */,
@@ -234,10 +234,10 @@
 			files = (
 				C48402DF19F7E26E0054111C /* Images.xcassets in Resources */,
 				C470802319FFAE3000B10705 /* ODOverlayAnnotationView.nib in Resources */,
-				C4775FFC1A02295400EEB3E6 /* violet.png in Resources */,
+				C40245CB1A10F7BC006B5D8C /* violet.png in Resources */,
 				C48402DD19F7E26E0054111C /* LaunchScreen.xib in Resources */,
 				C48402E219F7E26E0054111C /* MapTestViewController.xib in Resources */,
-				C4775FFD1A02295400EEB3E6 /* violet@2x.png in Resources */,
+				C40245CC1A10F7BC006B5D8C /* violet@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

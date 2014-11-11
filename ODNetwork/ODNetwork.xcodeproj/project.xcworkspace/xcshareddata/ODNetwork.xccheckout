@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>84A21A87-53F0-46E6-9BC7-98E7C7AE4CAE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ODNetwork</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ACE694F3F05BD3E6B39E6B9379A85EE9D6DFE025</key>
+		<string>https://bitbucket.org/dreamteamluxembourg/iproject.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ODNetwork/ODNetwork.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ACE694F3F05BD3E6B39E6B9379A85EE9D6DFE025</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/dreamteamluxembourg/iproject.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ACE694F3F05BD3E6B39E6B9379A85EE9D6DFE025</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ACE694F3F05BD3E6B39E6B9379A85EE9D6DFE025</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iSwift</string>
+		</dict>
+	</array>
+</dict>
+</plist>

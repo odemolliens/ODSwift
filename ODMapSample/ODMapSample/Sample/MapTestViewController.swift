@@ -1,9 +1,20 @@
 //
-//  MapTestViewController.swift
-//  iMap
+//Copyright 2014 Olivier Demolliens - @odemolliens
 //
-//  Created by OlivierDemolliens on 22/10/14.
-//  Copyright (c) 2014 dreamteam. All rights reserved.
+//Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
+//
+//file except in compliance with the License. You may obtain a copy of the License at
+//
+//http://www.apache.org/licenses/LICENSE-2.0
+//
+//Unless required by applicable law or agreed to in writing, software distributed under
+//
+//the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
+//
+//ANY KIND, either express or implied. See the License for the specific language governing
+//
+//permissions and limitations under the License.
+//
 //
 
 import UIKit
@@ -12,7 +23,7 @@ import CoreLocation;
 import MapKit;
 
 class MapTestViewController: ODMapViewController {
-
+    
     required init(coder aDecoder: NSCoder) {
         
         super.init(coder: aDecoder);
@@ -26,56 +37,59 @@ class MapTestViewController: ODMapViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         
-        var longitude:CLLocationDegrees = 41.8991623;
-        var latitude:CLLocationDegrees = 12.47307180000007;
-       
-        // Latitude delta: The map will look more zoom-in
-        var latDelta:CLLocationDegrees = 0.1
-        // Longitude delta
-        var longDelta:CLLocationDegrees = 0.1
-        // It defines the latitude and longitude directions to show on a map.
-        var spanCoordinate: MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
-        // Set the location
-        var myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-        // Create a region: it defines which portion of the map to display
-        var theRegion:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, spanCoordinate)
-        // Set the region in the mapview
-        self.mapView.setRegion(theRegion, animated: true)
-        // Add an annotation on the center of the map (PIN)
+        self.showRegion(coordinate: CLLocationCoordinate2DMake(48.58476, 7.750576), delta: MKCoordinateSpanMake(1, 1), animated: true);
         
-        
-        var mapObject : ODMapObject = ODMapObject(location: myLocation);
-        mapObject.title = "Piazza Navona"
-        // Subtitle of the pin
-        mapObject.subtitle = "Roma, Italy"
+        var mapObject : ODMapObject = ODMapObject(location: CLLocationCoordinate2DMake(48.58476, 7.750576));
+        mapObject.title = "Title"
+        mapObject.subtitle = "Subtitle"
         mapObject.iconPin = "violet";
         
-        var myLocationAnnotation = ODAnnotation(content:mapObject)
-        // Coordinate of the pin
-        myLocationAnnotation.coordinate = myLocation
-        // Title of the pin
-        myLocationAnnotation.title = "Piazza Navona"
-        // Subtitle of the pin
-        myLocationAnnotation.subtitle = "Roma, Italy"
-        // Add the annotation to the mapview
-        self.mapView.addAnnotation(myLocationAnnotation)
+        self.addMapObjectOnMap(mapObject: mapObject);
     }
     
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning();
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK : ODMapView Protocol Callout
+    
+    internal override func nativeCalloutView() -> Bool
+    {
+        return false;
     }
-    */
-
+    
+    internal override func customAnnotationView() -> ODOverlayAnnotationView
+    {
+        return (NSBundle.mainBundle().loadNibNamed("ODOverlayAnnotationView", owner: self, options: nil))[0] as ODOverlayAnnotationView;
+    }
+    
+    internal override func fillCustomAnnotationView(view : ODOverlayAnnotationView, annotation : ODAnnotation) -> ODOverlayAnnotationView
+    {
+        return view;
+    }
+    
+    internal override func calloutViewFrameWidthShift() -> CGFloat
+    {
+        return -10;
+    }
+    
+    // MARK: ODMapView Protocol Core Location
+    
+    internal override func showUserLocation() -> Bool
+    {
+        return true;
+    }
+    
+    internal override func showBuildings() -> Bool
+    {
+        return true;
+    }
+    
+    internal override func showPointOfInterests() -> Bool
+    {
+        return true;
+    }
+    
 }
